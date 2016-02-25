@@ -11,10 +11,10 @@ makeCacheMatrix <- function(x = matrix()) {
   }
   get <- function() x         # get is the second function that returns the vector x stored in the main function.
   
-  setinverse <- function(solve) m <<- solve # stores the value of the input in a variable m into the main function makeVector
+  setinverse <- function(solve) m <<- solve # stores the value of the input in a variable m into the main function makeCacheMatrix
   getinverse <- function() m                # returns m in this case the inverse of the matrix
   list(set = set, get = get, setinverse = setinverse, getinverse = getinverse )
-}                             # storing the four functions into the makeVector function
+}                             # storing the four functions into the makeCacheMatrix function
 
 
 ## Write a short comment describing this function
